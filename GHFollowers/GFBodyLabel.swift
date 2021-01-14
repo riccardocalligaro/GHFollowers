@@ -1,5 +1,5 @@
 //
-//  GFTitleLabel.swift
+//  GFBodyLabel.swift
 //  GHFollowers
 //
 //  Created by Riccardo on 14/01/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GFTitleLabel: UILabel {
+class GFBodyLabel: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -17,19 +17,19 @@ class GFTitleLabel: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(textAlgiment: NSTextAlignment, fontSize: CGFloat) {
+    init(textAlgiment: NSTextAlignment) {
         super.init(frame: .zero)
         
         textAlignment = textAlignment
-        font = UIFont.systemFont(ofSize: fontSize, weight: .bold)
         configure()
     }
     
     private func configure() {
-        textColor = .label
+        textColor = .secondaryLabel
+        font = UIFont.preferredFont(forTextStyle: .body)
         adjustsFontSizeToFitWidth = true
-        minimumScaleFactor = 0.9
-        lineBreakMode = .byTruncatingTail
+        minimumScaleFactor = 0.75
+        lineBreakMode = .byWordWrapping
         translatesAutoresizingMaskIntoConstraints = false
     }
     
