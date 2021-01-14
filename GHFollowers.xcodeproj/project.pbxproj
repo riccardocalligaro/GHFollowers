@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B44129725B02A2700A39772 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B44129625B02A2700A39772 /* FollowerListVC.swift */; };
+		8B44129A25B0306500A39772 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B44129925B0306500A39772 /* GFTitleLabel.swift */; };
 		8B8389CB25AF6B6A00FE5D39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8389CA25AF6B6A00FE5D39 /* AppDelegate.swift */; };
 		8B8389CD25AF6B6A00FE5D39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8389CC25AF6B6A00FE5D39 /* SceneDelegate.swift */; };
 		8B8389D425AF6B6C00FE5D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8389D325AF6B6C00FE5D39 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B44129625B02A2700A39772 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		8B44129925B0306500A39772 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		8B8389C725AF6B6A00FE5D39 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8389CA25AF6B6A00FE5D39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B8389CC25AF6B6A00FE5D39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				8BB11D3D25AF702200E82E38 /* FavoritesListVC.swift */,
 				8BB11D4325AFAA7F00E82E38 /* GFTextField.swift */,
 				8BB11D4625AFAF6F00E82E38 /* Extensions.swift */,
+				8B44129625B02A2700A39772 /* FollowerListVC.swift */,
+				8B44129925B0306500A39772 /* GFTitleLabel.swift */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -151,6 +157,8 @@
 				8BB11D3B25AF700800E82E38 /* SearchVC.swift in Sources */,
 				8B8389CB25AF6B6A00FE5D39 /* AppDelegate.swift in Sources */,
 				8B8389CD25AF6B6A00FE5D39 /* SceneDelegate.swift in Sources */,
+				8B44129A25B0306500A39772 /* GFTitleLabel.swift in Sources */,
+				8B44129725B02A2700A39772 /* FollowerListVC.swift in Sources */,
 				8BB11D4725AFAF6F00E82E38 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
