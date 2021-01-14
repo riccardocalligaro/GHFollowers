@@ -43,6 +43,7 @@ class GFAlertVC: UIViewController {
         configureTitleLabel()
         configureActionButton()
         configureBodyLabel()
+        configureDismissGesture()
     }
     
     func configureContainerView() {
@@ -89,9 +90,24 @@ class GFAlertVC: UIViewController {
         actionButton.setHeight(44)
     }
     
+    func configureDismissGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissVC))
+        
+        tapGesture.delegate = self
+
+        view.addGestureRecognizer(tapGesture)
+    }
     
     @objc func dismissVC() {
+        print("Dismiss")
         dismiss(animated: true)
     }
 
+}
+
+extension GFAlertVC: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
+                                shouldReceive touch: UITouch) -> Bool {
+           return (touch.view !== self.containerView)
+    }
 }

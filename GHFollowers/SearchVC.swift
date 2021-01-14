@@ -56,7 +56,7 @@ class SearchVC: UIViewController {
     @objc func pushFollowerListVC() {
         
         guard isUsernameValid else {
-            presentGFAlertOnMainThread(title: "Error", message: "Error", buttonTitle: "Ok")
+            presentGFAlertOnMainThread(title: "Error", message: "Error", buttonTitle: "Error")
             return
         }
         
