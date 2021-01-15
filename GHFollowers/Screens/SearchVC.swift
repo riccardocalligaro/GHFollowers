@@ -32,7 +32,7 @@ class SearchVC: UIViewController {
         
         // if we called this on view did load the nav bar
         // wouldn't be hidden when the back button is pressed
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     override func viewDidLoad() {
