@@ -7,9 +7,12 @@
 
 import UIKit
 
+protocol SearchVCDelegate: AnyObject {
+    func didChangeCurrentUser()
+}
+
 class SearchVC: UIViewController {
-    
-    
+        
     // MARK: - Views
     
     let logoImageView = UIImageView()
@@ -63,6 +66,7 @@ class SearchVC: UIViewController {
         let followerListVC = FollowerListVC()
         followerListVC.username = usernameTextField.text
         followerListVC.title = usernameTextField.text
+        followerListVC.searchVCDelegate = self
         
         navigationController?.pushViewController(followerListVC, animated: true)
     }
@@ -109,4 +113,12 @@ extension SearchVC: UITextFieldDelegate {
         pushFollowerListVC()
         return true
     }
+}
+
+extension SearchVC: SearchVCDelegate {
+    func didChangeCurrentUser() {
+        usernameTextField.text = ""
+    }
+    
+    
 }
